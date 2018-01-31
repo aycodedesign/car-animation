@@ -1,0 +1,121 @@
+body {
+  background-color: #080047;
+  /* background-color: #333; */
+}
+
+.stage {
+  background-color: skyblue;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+.clouds {
+  background-image: url('../img/clouds.png');
+  height: 273px;
+  width: 800px;
+}
+
+.buildings {
+  background-image: url('../img/far_bg_1.png');
+  height: 559px;
+  width: 800px;
+}
+.street {
+  background-image: url('../img/street.png');
+  height: 62px;
+  width: 800px;
+}
+
+.fifties.date {
+  background-image: url('../img/50s/1955.png');
+  position: absolute;
+  width: 179px;
+  height: 179px;
+  left: 310px;
+  top: 5%;
+}
+
+.fifties.car {
+  background-image: url('../img/50s/car.png');
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+  width: 896px;
+  height: 90px;
+}
+
+.fifties.device {
+  background-image: url('../img/50s/recording-devices-bg.png');
+  position: absolute;
+  left: 70px;
+  bottom: 50px;
+  width: 288px;
+  height: 274px;
+}
+
+.fifties.text {
+  position: absolute;
+  background-image: url('../img/50s/recording-devices-text.png');
+  left: 100px;
+  bottom: 80px;
+  width: 222px;
+  height: 86px;
+}
+
+
+/* POSITIONING */
+/* use 'relative' for the parent, then if you use absolute for children, they will be positioned on the parent instead of on the body */
+
+.stage {
+  position: relative;
+  /* left: 0px;
+  top: 0px; */
+}
+
+.clouds {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-position: 0px 0px;
+}
+
+.buildings {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-position: 0px 0px;
+}
+
+.street {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+/* ARROWS */
+
+.arrow {
+  width: 39px;
+  height: 37px;
+  position: absolute;
+  top: 270px;
+  background-position: 0 0;
+  /* transition: all .5s; */
+}
+
+/* shifting the background position on hover shows a different sprite position */
+
+.arrow:hover {
+  background-position: 0 -37px;
+}
+
+.arrow.left {
+  background-image: url('../img/arrow-left.png');
+  left: 20px;
+}
+
+.arrow.right {
+  background-image: url('../img/arrow-right.png');
+  right: 20px;
+}
